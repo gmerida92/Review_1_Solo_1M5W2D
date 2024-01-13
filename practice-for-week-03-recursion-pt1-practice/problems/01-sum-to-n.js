@@ -14,16 +14,18 @@ sumToN(-8)  // returns null
 
 function sumToN(n) {
   // Your code here
-  if (n) {
+  if (!n || n < 0) {
     return null
   }
 
   if (n === 0) {
-    return
+    return 0
   }
 
   return n + sumToN(n - 1)
 }
+
+// sumToN(5)
 
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS LINE*****************/
