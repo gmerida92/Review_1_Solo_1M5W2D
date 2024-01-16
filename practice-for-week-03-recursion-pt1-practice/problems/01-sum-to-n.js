@@ -25,12 +25,12 @@ function sumToN(n) {
   return n + sumToN(n - 1)
 }
 
-// sumToN(5)
 
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS LINE*****************/
 try {
   module.exports = sumToN;
+  sumToN(5)
 } catch (e) {
   module.exports = null;
 }
