@@ -12,13 +12,15 @@ sumArray([1, 2, 3, 4, 5]); // 15
 
 function sumArray(arr) {
   // Your code here
-  if(!arr) {return null}
+  if (arr.length === 1) { return arr[0] }
+  else { return arr.shift() + sumArray(arr) }
 
-  if (arr.length > 0) {
-    return arr.shift() + sumArray(arr)
-  }
+  // if(!arr) {return null}
 
-  return
+  // if (arr.length > 0) {
+  //   return arr.shift() + sumArray(arr)
+  // }
+
   // let sumOfArray = 0;
   // for(let i = 0; i < arr.length; i++){
   //   sumArray =+ arr[i]
