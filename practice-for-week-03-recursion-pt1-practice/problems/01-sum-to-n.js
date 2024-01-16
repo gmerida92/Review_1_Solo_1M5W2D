@@ -18,7 +18,7 @@ function sumToN(n) {
     return null
   }
 
-  if (n === 1) {
+  else if (n === 1) {
     return 1
   }
 
