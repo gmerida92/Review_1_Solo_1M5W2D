@@ -29,6 +29,12 @@ function iceCreamShop(flavors, favorite) {
   flavors.shift();
 
   return iceCreamShop(flavors, favorite)
+
+  // if (!flavors.length) return false;
+  // if (flavors.pop() === favorite) return true;
+
+
+  // return iceCreamShop(flavors, favorite);
 }
 
 
