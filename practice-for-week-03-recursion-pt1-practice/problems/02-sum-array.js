@@ -15,6 +15,12 @@ function sumArray(arr) {
   if (arr.length === 1) { return arr[0] }
   else { return arr.shift() + sumArray(arr) }
 
+//   if (arr.length === 0) {
+//     return 0;
+// }
+
+// return arr[0] + sumArray(arr.slice(1));
+
   // if(!arr) {return null}
 
   // if (arr.length > 0) {
