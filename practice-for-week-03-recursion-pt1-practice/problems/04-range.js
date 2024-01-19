@@ -15,7 +15,14 @@ function range(start, end) {
   // Your code here
   if(end < start) {return []}
 
-  return range(start + 1, end)
+  //base case
+  if (start < end) {
+    return [start].concat(range(start + 1, end))
+  }
+  // if (start === end) {
+  //   return 
+  // }
+  return
 }
 
 
