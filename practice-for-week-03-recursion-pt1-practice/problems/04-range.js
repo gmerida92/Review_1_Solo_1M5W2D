@@ -13,16 +13,20 @@ range(7, 6); // []
 
 function range(start, end) {
   // Your code here
-  if(end < start) {return []}
+  if(end <= start) {return []}
 
   //base case
-  if (start < end) {
-    return [start].concat(range(start + 1, end))
-  }
-  // if (start === end) {
-  //   return 
+  // if(start === end) {
+  //   return range(start, end)
   // }
-  return
+
+  // if (start < end) {
+  //   return [start].concat(range(start + 1, end))
+  // }
+
+  if (start < end) {
+    return [start,...range(start + 1, end)]
+  }
 }
 
 
