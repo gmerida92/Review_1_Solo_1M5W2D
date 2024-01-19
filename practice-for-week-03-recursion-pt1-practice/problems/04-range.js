@@ -15,11 +15,7 @@ function range(start, end) {
   // Your code here
   if(end < start) {return []}
 
-  
-
   return range(start + 1, end)
-
-
 }
 
 
